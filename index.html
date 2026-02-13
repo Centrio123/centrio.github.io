@@ -1,1 +1,50 @@
-Hello! :D
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cloudflare Page</title>
+    <style>
+        body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background-color: #f4f4f9; }
+        .card { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; }
+        h1 { color: #f38020; } /* Cloudflare Orange */
+      body {
+    margin: 0;
+    padding: 0;
+    /* This creates the dark grey to deep purple gradient */
+    background: radial-gradient(circle at top right, #2e1065, #111827, #000000);
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+
+/* Optional: Add a subtle glow effect to your content card */
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px); /* This creates a "glass" effect */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+h1 {
+    background: linear-gradient(to right, #a855f7, #d8b4fe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+}
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>It's Live!</h1>
+        <p>Deployed via GitHub to Cloudflare Pages.</p>
+    </div>
+</body>
+</html>

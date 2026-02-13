@@ -5,37 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Cloudflare Page</title>
     <style>
-        body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background-color: #f4f4f9; }
-        .card { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; }
-        h1 { color: #f38020; } /* Cloudflare Orange */
-body {
-  margin: 0;
-  height: 100vh;
-  background-color: #0b0a0f; /* Deep black-purple */
-  /* This creates a subtle grid pattern */
-  background-image: 
-    linear-gradient(rgba(139, 92, 246, 0.1) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(139, 92, 246, 0.1) 1px, transparent 1px);
-  background-size: 40px 40px;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-}
+<body>
+  <svg style="position:fixed; top:-10%; left:-10%; z-index:-1;" width="500" height="500" viewBox="0 0 200 200">
+    <path fill="#4c1d95" d="M44.7,-76.4C58.8,-69.2,71.8,-59.1,79.6,-46.2C87.4,-33.3,90.1,-16.6,89.1,-0.6C88.1,15.5,83.4,31,74.9,44.2C66.4,57.4,54.1,68.2,40,75.4C25.9,82.6,9.9,86.2,-5.8,89.5C-21.5,92.8,-36.8,95.8,-50.3,90.6C-63.7,85.4,-75.3,71.9,-82.1,57.1C-88.9,42.2,-90.9,26.1,-90.1,10.5C-89.3,-5.1,-85.7,-20.2,-79.1,-34.1C-72.5,-48,-62.9,-60.7,-50.2,-68.5C-37.5,-76.3,-21.7,-79.2,-5.3,-70C11.1,-60.8,22.2,-67.2,44.7,-76.4Z" transform="translate(100 100)" opacity="0.4" />
+  </svg>
 
-/* Adds a glowing "blob" behind your content for texture */
-body::before {
-  content: "";
-  position: absolute;
-  width: 600px;
-  height: 600px;
-  background: radial-gradient(circle, rgba(168, 85, 247, 0.2) 0%, transparent 70%);
-  top: -100px;
-  right: -100px;
-  z-index: -1;
-}
+  <div class="card">
+    <h1>Your Content Here</h1>
+  </div>
+</body>
     </style>
 </head>
 <body>

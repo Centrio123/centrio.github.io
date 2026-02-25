@@ -8,6 +8,47 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;800&display=swap" rel="stylesheet">
     <style>
+        .server-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .server-card {
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .role-tag {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.7rem;
+            font-weight: bold;
+            color: #fff;
+            background: var(--accent-purple);
+            padding: 2px 8px;
+            border-radius: 4px;
+            width: fit-content;
+            text-transform: uppercase;
+        }
+
+        .server-name {
+            font-weight: 800;
+            font-size: 1.2rem;
+            color: white;
+        }
+
+        .server-desc {
+            font-size: 0.9rem;
+            color: var(--text-dim);
+            margin: 0;
+        }
         :root {
             --bg-dark: #0a0a0c;
             --accent-purple: #8b5cf6;
@@ -28,7 +69,6 @@
             min-height: 100vh;
         }
 
-        /* Background Effects */
         .bg-mesh {
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
@@ -55,7 +95,6 @@
             background-size: 50px 50px;
         }
 
-        /* Layout */
         .wrapper {
             max-width: 900px;
             margin: 0 auto;
@@ -229,6 +268,23 @@
                 <span>Skript</span> / <span>Java</span> / <span>HTML</span> / <span>CSS</span>
             </div>
         </header>
+        <section id="experience" style="margin-bottom: 4rem;">
+            <h2 class="section-title">Servers I'm Staff On</h2>
+            
+            <div class="server-grid">
+                <div class="server-card">
+                    <div class="role-tag">Administrator</div>
+                    <div class="server-name">ExampleNetwork</div>
+                    <p class="server-desc">Managing player relations, configuring plugins, and overseeing the moderation team.</p>
+                </div>
+
+                <div class="server-card">
+                    <div class="role-tag">Developer</div>
+                    <div class="server-name">SurvivalCraft</div>
+                    <p class="server-desc">Maintaining custom Skripts and optimizing server performance for 50+ concurrent players.</p>
+                </div>
+            </div>
+        </section>
 
         <main id="projects">
             <h2 class="section-title">My projects</h2>
